@@ -13,9 +13,15 @@
     <meta name="description" content="En esta pagina estamos aprendiendo los fundamentos de HTML con JonMircha">
     <!--?DESCRIPTION:(NO mas de 165 caracteres)RECOMENDADO ES COLOCAR A CADA DOCUMENTO HTML UN TITULO Y UNA DESCRIPCION-->
     <!--*Charset, name, content* son atributos -->
+    <link rel="stylesheet" href="/cursos/jon-mircha/html/assets/estilos.css"> <!--enlazando pagina de estilos-->
+    <style>
+      h2{color: orangered}
+    </style>
 </head>
 
 <body>
+ 
+  <h2>Aprendiendo HTML</h2>
     <!-- ?BODY :: Aquí empieza la parte que se vera mi sitio web -->
      <!--ESTO ES UN COMENTARIO-->
      <!--
@@ -30,5 +36,131 @@
     <p>Hola escribiendo mi primer documento HTML</p>
     <p>Aprendiendo sobre Diseño Web</p>
     
+    <hr>
+  
+    <h2>Encabezados <HTML></HTML></h2>
+  
+    <h1>Encabezado de Nivel 1</h1> <!--Importante 1 solo h1 por pagina HTML-->
+  <h2>Encabezado de Nivel 2</h2>
+  <h3>Encabezado de Nivel 3</h3>
+  <h4>Encabezado de Nivel 4</h4>
+  <h5>Encabezado de Nivel 5</h5>
+  <h6>Encabezado de Nivel 6</h6>
+ 
+  <hr>
+  
+  <h2>Etiquetas de Texto Básicas</h2>
+  
+  <p>Un parrafo</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magnam, hic tempore molestiae error repellendus dolore quisquam. 
+  Iusto voluptatem ipsam veniam laboriosam quibusdam minus quae, sint doloremque consequatur optio nesciunt.</p>
+  <p>
+    Palabras(etiquetas de linea):<b>negrita</b>,<i>italica</i>,<u>subrayado</u>,e=mc<sup>2</sup>,H<sub>2</sub>O,<mark>Marcatexto</mark>,<small>Letra pequeñas</small>
+  </p>
+  
+  <hr>
+  
+  <h2>Etiquetas de Texto Semánticas</h2>
+  <p>
+    <strong>Este Texto es importante!</strong>
+    <em>Este Texto hace Enfasis</em>
+    <blockquote>Yo solo sé, que nose nada</blockquote>
+    <cite>Sócrates</cite>
+  </p> <!--son etiquetas semanticas dan cierto significado-->
+  <hr>
+
+  <h2>Etiquetas de Saltos</h2>
+
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Fuga, doloribus repudiandae laboriosam assumenda at distinctio a quidem non cum tempore placeat saepe nostrum nam aspernatur explicabo repellat et ad adipisci!</p>
+  <hr>
+
+  <h2>Etiquetas de Formateo(pre)</h2>
+  <p>
+    <pre>
+      Tareas por Hacer
+      - HTML
+        - Terminar de grabar las secciones de este curso
+        - Editar en un solo video
+      - CSS
+        - Comenzar a grabar secciones CSS
+        - Editar en un solo video
+    </pre>
+  </p>
+
+  <p>
+    <code>Este texto esta en formato en codigo</code>
+  </p>
+  <p>
+    <pre>
+      <code>
+        import React from "react";
+        import Title from "./Title";
+
+        function App{
+          return &lt;title/&gt;;
+        }
+      </code>
+    </pre>
+  </p>
+  <hr>
+
+  <h2>Etiquetas Semánticas Estructurales</h2>
+  <div>Es una etiqueta contenedora que no tiene semánticas</div>
+  <header>header - Cabecera de un sitio web o de una seccion</header>
+  <main> main - Define la seccion principal del documento, solo puede existir una etiqueta main por documento</main>
+  <footer>footer - Pie de pagina de un sitio web o de una sección</footer>
+  <nav>nav - Representa la navegación</nav>
+  <article> article - Representa una seccion autocontenido (que por si sola se explica)</article>
+  <aside>aside - Representacontenido complementario o secundario(publicidad)</aside>
+  <section>section - Representa una seccion de contenido genérico </section>
+  <address>address - Representa una dirección física</address>
+
+  <hr>
+  <h2>Etiquetas de Bloque VS Etiquetas de Linea</h2>
+  
+  <div style="background-color: yellow; color: red;">La etiqueta por excelencia es la div, una etiqueta de bloque es aquellas que genera saltos de linea con sus etiquetas hermanas</div>
+  <span style="background-color: green;">La etiqueta de linea por excelencia es el span, una etiqueta de linea solo ocupa el espacio necesario que continene su contenido</span><span>hola soy otra span</span>
+  <hr>
+  <h2>Estilos CSS en HTML</h2>
+  <p>3 estilos para aplicar estilos css</p>
+  <p>1°: aplicarlo desde una hoja exterior css</p>
+  <p>2°: aplicar el estilo css directamente desde el head</p>
+  <p>3°: aplicarlo dentro de la etiqueta con el atributo style </p>
+  <hr>
+  <h2>Scripts en HTML</h2>
+  <hr>
+  <h2>Imagenes</h2>
+  <img src="img/periodic-table-of-html-elements.png" alt="Tabla Periodica de los elementos HTML">
+  <img src="img/puesta-sol.jpg" alt="Puesta de sol">
+  <img src="img/this-is-fine.gif" alt="meme del perro this is fine">
+  <img src="img/kEnAi.svg" alt="Kenai">
+  <hr>
+  <h2>SVG</h2>
+  
+  <svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M5 7H19C19.5523 7 20 7.44771 20 8V16C20 16.5523 19.5523 17 19 17H5C4.44772 17 4 16.5523 4 16V8C4 7.44772 4.44772 7 5 7ZM2 8C2 6.34315 3.34315 5 5 5H19C20.6569 5 22 6.34315 22 8V16C22 17.6569 20.6569 19 19 19H5C3.34315 19 2 17.6569 2 16V8ZM10 9L14 12L10 15V9Z"
+    fill="currentColor"
+  />
+</svg>
+  <hr>
+  <h2>Figuras</h2>
+  <figure>
+    <img src="img/periodic-table-of-html-elements.png" alt="tabla periodica html">
+    <figcaption>Tabla de los elementos HTML</figcaption>
+  </figure>
+  <hr>
+  <script>
+    console.log("Hola estamos aprendiendo html")
+  </script>
+  <script src="/cursos/jon-mircha/html/assets/codigos.js"></script>
 </body>
 </html>
